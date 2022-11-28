@@ -1,12 +1,12 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
-
+<a name="readme-top"></a>
 
 
 
 <br />
 <div align="center">
-  <a href="https://github.com/VictorGoubet/GameOfLife/README.md">
+  <a href="https://github.com/VictorGoubet/GameOfLife">
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq4fznCFt-0SH25M9VBnb9DF_RXRG4y9aX0_J5tcX4d4xFsGQvmEEBrVw1zEPNw5AxyVg&usqp=CAU" alt="Logo" width="80" height="80">
   </a>
 
@@ -15,7 +15,7 @@
   <p align="center">
     <i>What if the life was governed by three laws ?</i>
     <br />
-    <a href="https://github.com/VictorGoubet/GameOfLife/README"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/VictorGoubet/GameOfLife/blob/master/GameOfLife.py"><strong>Check the code »</strong></a>
     <br />
     <br />
     <a href="https://github.com/VictorGoubet/GameOfLife/issues">Report Bug</a>
@@ -41,8 +41,7 @@ The game of life is a automaton where each cell is represented as a simple squar
 * Any dead cell with exactly three live neighbours comes to life.
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+<p align="right"><a href="#readme-top">🔝</a></p>
 
 
 <!-- GETTING STARTED -->
@@ -84,7 +83,7 @@ You can follow the different steps inorder to get the programm working on your c
 
 The windows should appears! The interface is pretty intuitive, have fun!
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right"><a href="#readme-top">🔝</a></p>
 
 
 
@@ -103,7 +102,7 @@ Victor Goubet - victorgoubet@orange.fr
 [forks-shield]: https://img.shields.io/github/forks/VictorGoubet/GameOfLife.svg?style=for-the-badge
 [forks-url]: https://github.com/VictorGoubet/GameOfLife/network/members
 [stars-shield]: https://img.shields.io/github/stars/VictorGoubet/GameOfLife.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
+[stars-url]: https://img.shields.io/github/issues/VictorGoubet/stargazers
 [issues-shield]: https://img.shields.io/github/issues/VictorGoubet/GameOfLife.svg?style=for-the-badge
 [issues-url]: https://github.com/VictorGoubet/GameOfLife/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
