@@ -81,7 +81,7 @@ You can follow the different steps inorder to get the programm working on your c
    python GameOfLife.py
    ```
 
-The windows should appears! The interface is pretty intuitive, have fun!
+The windows should appear! The interface is pretty intuitive, have fun!
 
 <p align="right"><a href="#readme-top">🔝</a></p>
 
@@ -102,7 +102,7 @@ Victor Goubet - victorgoubet@orange.fr
 [forks-shield]: https://img.shields.io/github/forks/VictorGoubet/GameOfLife.svg?style=for-the-badge
 [forks-url]: https://github.com/VictorGoubet/GameOfLife/network/members
 [stars-shield]: https://img.shields.io/github/stars/VictorGoubet/GameOfLife.svg?style=for-the-badge
-[stars-url]: https://img.shields.io/github/issues/VictorGoubet/stargazers
+[stars-url]: https://img.shields.io/github/issues/VictorGoubet/GameOfLife/stargazers
 [issues-shield]: https://img.shields.io/github/issues/VictorGoubet/GameOfLife.svg?style=for-the-badge
 [issues-url]: https://github.com/VictorGoubet/GameOfLife/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
