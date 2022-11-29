@@ -1,5 +1,11 @@
 import numpy as np
 import tkinter as tk
+import customtkinter as ctk
+
+
+ctk.set_appearance_mode('dark')
+ctk.set_default_color_theme('green')
+ctk.set_window_scaling(1)
 
 
 class GameOfLife():
@@ -33,37 +39,32 @@ class GameOfLife():
         """Initialize the main windows
         """
 
-        self.root = tk.Tk('GameOfLife')
+        self.root = ctk.CTk('GameOfLife')
         self.root.title('GameOfLife')
-        
-        x = int((self.root.winfo_screenwidth() - self.root.winfo_reqwidth()) / 2)
-        y = int((self.root.winfo_screenheight() - self.root.winfo_reqheight()) / 2)
 
-        self.root.geometry(f"{self.windows_heigth}x{self.windows_width}+{x}+{y}")
+        self.root.geometry(f"{self.windows_heigth}x{self.windows_width}")
         self.root.resizable(width=False, height=False)
 
 
     def init_board(self, height:int, width:int) -> None:
         """Create the board view and logic
         
-        Parameters:
-        ------------
         :param int height: The number of cells we can put in the height of the board
         :param int width: The number of cells we can put in the width of the board
         """
         
         # compute the canva and the cell size
 
-        self.cell_width = self.windows_width // width
+        self.cell_width = (self.windows_width + self.windows_width//4) // width
         board_canva_w = width * self.cell_width
 
         free_space = 60
-        self.cell_height = (self.windows_heigth - free_space) // height
+        self.cell_height = (self.windows_heigth - free_space + self.windows_width//4) // height
         board_canva_h = height * self.cell_height
 
         self.board = np.zeros((height, width), dtype=int)
 
-        self.board_canva = tk.Canvas(width=board_canva_w, height=board_canva_h)
+        self.board_canva = ctk.CTkCanvas(width=board_canva_w, height=board_canva_h)
         self.board_canva.place(x=0, y=free_space)
 
 
@@ -71,16 +72,16 @@ class GameOfLife():
         """Create the basic button in the menu of the game
         """
         self.board_canva.bind("<Button-1>", self.event_hdlr)
-        launch_btn = tk.Button(self.root, text='GO', width=4, 
-                               height=2, command=self.launch_simulation)
-        launch_btn.place(x=10, y=10)
+        launch_btn = ctk.CTkButton(self.root, text='GO', width=4, 
+                                   height=2, command=self.launch_simulation)
+        launch_btn.place(x=20, y=10)
 
-        reset_btn = tk.Button(self.root, text='RESET', width=8, 
-                              height=2, command=self.reset)
+        reset_btn = ctk.CTkButton(self.root, text='RESET', width=8, 
+                                  height=2, command=self.reset)
         reset_btn.place(x=self.windows_width - 80, y=10)
 
-        text_info = tk.Label(self.root, textvariable=self.info, height=2, width=50)
-        text_info.place(x=self.windows_width // 2 - 190, y=10)
+        text_info = ctk.CTkLabel(self.root, textvariable=self.info, height=2, width=50)
+        text_info.place(x=self.windows_width // 2 - self.windows_width // 10, y=10)
         
 
     def event_hdlr(self, evt:tk.Event) -> None:
@@ -202,5 +203,5 @@ class GameOfLife():
 
 
 if __name__ == "__main__":
-    game = GameOfLife(epochs=100, n_cells=30, windows_size=700)
+    game = GameOfLife(epochs=100, n_cells=30, windows_size=600)
     game.root.mainloop()
